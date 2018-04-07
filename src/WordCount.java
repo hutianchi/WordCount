@@ -18,6 +18,16 @@ public class WordCount
         return wordArr;
     }
 
+	public boolean assertEquals(ArrayList<Word> wordtrue,ArrayList<Word> wordtest) {
+		for(int i=0;i<wordtrue.size();i++)
+		{
+			Word w1=wordtest.get(i);
+			Word w2=wordtrue.get(i);
+			if(w1.getStrWord()!=w2.getStrWord()||w1.getNum()!=w2.getNum()) return false;
+		}
+		return false;
+	}
+    
     public void Count() throws IOException //统计单词数
     {
         String line;   //读取的一行文本
