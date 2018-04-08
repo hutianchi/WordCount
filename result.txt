@@ -1,5 +1,4 @@
-ab	3
+ab	1
 ac	1
-aa	4
-ad	2
-aa-ab	2
+aa	1
+ad	1
